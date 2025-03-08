@@ -36,15 +36,30 @@
             border-radius: 10px; /* Optional: Adds rounded corners to the image */
         }
 
-        /* Headings */
+        /* Main Title */
         h1 {
-            font-size: 36px;
-            font-weight: 700; /* Bold for headings */
-            color: #2c3e50;
             text-align: center;
             margin-bottom: 40px;
         }
 
+        h1 .main-title {
+            font-size: 56px; /* Increased by 20px (36px + 20px) */
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase; /* Capitalizes the text */
+            display: block; /* Ensures it's on its own line */
+            line-height: 1.2; /* Adjust line height for better spacing */
+        }
+
+        h1 .sub-title {
+            font-size: 36px; /* Original size for the subheading */
+            font-weight: 600;
+            color: #2c3e50;
+            display: block; /* Ensures it's on its own line */
+            margin-top: 10px; /* Adds spacing between the main title and subheading */
+        }
+
+        /* Secondary Headings */
         h2 {
             font-size: 24px;
             font-weight: 600; /* Semi-bold for subheadings */
@@ -97,7 +112,10 @@
     </div>
 
     <!-- Main Title -->
-    <h1>Stay Sharp: 77 Brain Games & Memory Boosters for Seniors</h1>
+    <h1>
+        <span class="main-title">STAY SHARP</span>
+        <span class="sub-title">77 Brain Games & Memory Boosters for Seniors</span>
+    </h1>
 
     <!-- Secondary Title: Welcome -->
     <h2>Welcome to Stay Sharp!</h2>
