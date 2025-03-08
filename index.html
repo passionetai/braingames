@@ -19,18 +19,21 @@
             color: #333;
         }
 
-        /* Leaderboard Image Placeholder */
+        /* Leaderboard Image */
         .leaderboard {
             width: 100%;
-            height: 150px;
-            background-color: #e0e0e0;
             margin-bottom: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            font-size: 18px;
-            color: #666;
+            overflow: hidden; /* Ensures the image respects the border radius */
+        }
+
+        .leaderboard img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional: Adds rounded corners to the image */
         }
 
         /* Headings */
@@ -88,8 +91,10 @@
     </style>
 </head>
 <body>
-    <!-- Leaderboard Image Placeholder -->
-    <div class="leaderboard">Leaderboard Image Placeholder (728x90px Recommended)</div>
+    <!-- Leaderboard Image -->
+    <div class="leaderboard">
+        <img src="banner.png" alt="Leaderboard Banner">
+    </div>
 
     <!-- Main Title -->
     <h1>Stay Sharp: 77 Brain Games & Memory Boosters for Seniors</h1>
