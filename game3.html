@@ -98,7 +98,20 @@
         .task-section .color-list {
             font-size: 16px;
             margin-bottom: 15px;
-            padding-left: 20px;
+            padding-left: 0; /* Remove default padding */
+            list-style: none; /* Remove bullet points */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between items */
+        }
+
+        .task-section .color-list li {
+            display: inline-block;
+        }
+
+        .task-section .color-list li:not(:last-child)::after {
+            content: " |"; /* Add a separator after each item except the last */
+            margin-left: 10px; /* Space between item and separator */
         }
 
         .task-section .writing-space {
@@ -163,22 +176,24 @@
                 Look around and name 5 things that are blue (e.g., sky, shirt). Take 1 minute to spot them, then write them down in the space below. It’s okay if you find fewer—just enjoy the hunt! <strong>Repeat this daily with a new color</strong> from the list below to keep your brain engaged. If the spaces are filled, use scrap paper to continue.
             </div>
             <div class="color-list">
-                <strong>15 More Colors to Try:</strong><br>
-                - Red<br>
-                - Yellow<br>
-                - Green<br>
-                - Purple<br>
-                - Orange<br>
-                - Pink<br>
-                - Brown<br>
-                - Black<br>
-                - White<br>
-                - Gray<br>
-                - Gold<br>
-                - Silver<br>
-                - Teal<br>
-                - Lavender<br>
-                - Turquoise<br>
+                <strong>15 More Colors to Try:</strong>
+                <ul>
+                    <li>Red</li>
+                    <li>Yellow</li>
+                    <li>Green</li>
+                    <li>Purple</li>
+                    <li>Orange</li>
+                    <li>Pink</li>
+                    <li>Brown</li>
+                    <li>Black</li>
+                    <li>White</li>
+                    <li>Gray</li>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Teal</li>
+                    <li>Lavender</li>
+                    <li>Turquoise</li>
+                </ul>
             </div>
             <div class="writing-space">
                 1. ___________________________<br>
