@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Sharp - Section 3 Introduction</title>
+    <!-- Add Google Fonts link for a rounded font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         body {
-            font-family: 'Poppins', sans-serif; /* Modern, rounded font */
+            font-family: 'Nunito', sans-serif; /* Modern, rounded font */
             line-height: 1.6;
             margin: 0;
             padding: 40px;
@@ -15,6 +17,7 @@
             margin-left: auto;
             margin-right: auto;
             color: #333;
+            background-color: #f9f9f9; /* Light background for better readability */
         }
 
         /* Leaderboard Image Placeholder */
@@ -34,7 +37,7 @@
         /* Headings */
         h1 {
             font-size: 36px;
-            font-weight: 600;
+            font-weight: 700; /* Bold for the main title */
             color: #2c3e50;
             text-align: center;
             margin-bottom: 40px;
@@ -42,16 +45,19 @@
 
         h2 {
             font-size: 24px;
-            font-weight: 500;
+            font-weight: 600; /* Semi-bold for subheadings */
             color: #e67e22; /* Medium-dark orange for title bar */
             margin-top: 40px;
             margin-bottom: 20px;
+            border-bottom: 2px solid #e67e22; /* Add a subtle underline */
+            padding-bottom: 10px;
         }
 
         /* Paragraphs and Spacing */
         p {
             font-size: 16px;
             margin-bottom: 20px;
+            color: #444; /* Slightly darker text for better readability */
         }
 
         /* Highlighted Text */
@@ -59,11 +65,11 @@
             background-color: #ffeaa7; /* Soft yellow highlight */
             padding: 2px 6px;
             border-radius: 4px;
-            font-weight: 500;
+            font-weight: 600; /* Semi-bold for highlighted text */
         }
 
         /* Lists */
-        ul {
+        ul, ol {
             list-style-type: disc;
             padding-left: 30px;
             margin-bottom: 20px;
@@ -72,15 +78,25 @@
         li {
             font-size: 16px;
             margin-bottom: 10px;
+            color: #444; /* Slightly darker text for better readability */
+        }
+
+        ol {
+            list-style-type: decimal; /* Use numbers for ordered lists */
         }
 
         /* Ensure PDF-friendly layout */
         @media print {
             body {
                 padding: 20px;
+                background-color: #fff; /* White background for printing */
             }
             .leaderboard {
                 page-break-after: avoid;
+            }
+            .highlight {
+                background-color: transparent; /* Remove highlight for printing */
+                border: 1px solid #333; /* Add border for better visibility */
             }
         }
     </style>
