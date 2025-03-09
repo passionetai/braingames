@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Sharp - Game 6: Letter Hunt</title>
+    <!-- Add Google Fonts link for a rounded font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         body {
-            font-family: 'Poppins', sans-serif; /* Modern, rounded font */
+            font-family: 'Nunito', sans-serif; /* Modern, rounded font */
             line-height: 1.6;
             margin: 0;
             padding: 40px;
@@ -31,19 +33,23 @@
 
         .game-header .title {
             font-size: 28px;
-            font-weight: 600;
+            font-weight: 700; /* Bold for the title */
         }
 
         .game-header .graphic-placeholder {
             width: 60px;
             height: 60px;
-            background-color: #fff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #27ae60;
-            font-size: 14px;
+            overflow: hidden; /* Ensures the image respects the border radius */
+        }
+
+        .game-header .graphic-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the circle */
         }
 
         /* Main Content Section */
@@ -63,21 +69,25 @@
 
         .task-section .task-title {
             font-size: 22px;
-            font-weight: 500;
+            font-weight: 600; /* Semi-bold for the task title */
             margin-bottom: 15px;
         }
 
         .task-section .image-placeholder {
             width: 100px;
             height: 100px;
-            background-color: #fff;
             border-radius: 50%;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #34495e;
-            font-size: 14px;
+            overflow: hidden; /* Ensures the image respects the border radius */
+        }
+
+        .task-section .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the circle */
         }
 
         .task-section .task-content {
@@ -93,6 +103,7 @@
             font-size: 16px;
             color: #333;
             background-color: #fff;
+            font-family: 'Nunito', sans-serif; /* Ensure consistent font */
         }
 
         /* Sidebar (Brain Boost) */
@@ -106,7 +117,7 @@
 
         .boost-section .boost-title {
             font-size: 20px;
-            font-weight: 500;
+            font-weight: 600; /* Semi-bold for the boost title */
             margin-bottom: 15px;
         }
 
@@ -129,7 +140,9 @@
     <!-- Game Header -->
     <div class="game-header">
         <div class="title">Game 6: Letter Hunt</div>
-        <div class="graphic-placeholder">Graphic</div>
+        <div class="graphic-placeholder">
+            <img src="letter.png" alt="Letter Icon">
+        </div>
     </div>
 
     <!-- Game Content -->
@@ -137,7 +150,9 @@
         <!-- Task Section -->
         <div class="task-section">
             <div class="task-title">What to Do</div>
-            <div class="image-placeholder">Random Image</div>
+            <div class="image-placeholder">
+                <img src="read.png" alt="Read Image">
+            </div>
             <div class="task-content">
                 In 1 minute, find 5 words starting with “B” (e.g., book, ball). Look around your home or think of words you know, then write them down in the space below. If it’s tricky, start with easy ones like “bed” or “box”!
             </div>
