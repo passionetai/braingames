@@ -117,33 +117,16 @@
             border-color: #004d4d; /* Darker teal on hover */
         }
 
-        /* CSS Shapes */
+        /* Shape Images */
         .shape {
             display: inline-block;
-            margin: 0 5px;
             vertical-align: middle;
+            margin: 0 5px;
         }
 
-        .circle {
-            width: 20px;
-            height: 20px;
-            background-color: #008080; /* Teal Blue to match theme */
-            border-radius: 50%;
-        }
-
-        .square {
-            width: 20px;
-            height: 20px;
-            background-color: #008080; /* Teal Blue to match theme */
-        }
-
-        .triangle {
-            width: 0;
-            height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 20px solid #008080; /* Teal Blue to match theme */
-            display: inline-block;
+        .shape img {
+            width: 20px; /* Adjust size as needed */
+            height: 20px; /* Adjust size as needed */
         }
 
         /* Sidebar (Brain Boost) */
@@ -180,10 +163,9 @@
             .tp img, .ri img {
                 display: none; /* Hide images in print mode */
             }
-            .circle, .square, .triangle {
+            .shape img {
                 width: 15px !important; /* Reduce size for print */
                 height: 15px !important;
-                border-bottom-width: 15px !important; /* Adjust triangle for print */
             }
         }
     </style>
@@ -207,9 +189,9 @@
             </div>
             <div class="task-content">
                 Identify the next shape in each of these 3 sequences. Take 1-2 minutes to spot the pattern, then write the next shape below or say it aloud. If it’s tricky, look for repetition or order. Here they are:<br>
-                1. Circle <span class="shape"><span class="circle"></span></span>, Square <span class="shape"><span class="square"></span></span>, Circle <span class="shape"><span class="circle"></span></span>, __<br>
-                2. Triangle <span class="shape"><span class="triangle"></span></span>, Circle <span class="shape"><span class="circle"></span></span>, Square <span class="shape"><span class="square"></span></span>, __<br>
-                3. Square <span class="shape"><span class="square"></span></span>, Triangle <span class="shape"><span class="triangle"></span></span>, Circle <span class="shape"><span class="circle"></span></span>, __
+                1. Circle <span class="shape"><img src="gcircle.png" alt="Circle"></span>, Square <span class="shape"><img src="gsquare.png" alt="Square"></span>, Circle <span class="shape"><img src="gcircle.png" alt="Circle"></span>, __<br>
+                2. Triangle <span class="shape"><img src="gtriangle.png" alt="Triangle"></span>, Circle <span class="shape"><img src="gcircle.png" alt="Circle"></span>, Square <span class="shape"><img src="gsquare.png" alt="Square"></span>, __<br>
+                3. Square <span class="shape"><img src="gsquare.png" alt="Square"></span>, Triangle <span class="shape"><img src="gtriangle.png" alt="Triangle"></span>, Circle <span class="shape"><img src="gcircle.png" alt="Circle"></span>, __
             </div>
             <div class="writing-space">
                 Next Shapes:<br>
