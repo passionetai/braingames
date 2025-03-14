@@ -38,6 +38,11 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .leaderboard:hover img {
+            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         /* Headings */
@@ -86,6 +91,11 @@
             border-radius: 4px;
             font-weight: 600;
             color: #FF5733; /* Warm Orange for consistency */
+            transition: background-color 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #ffccaa; /* Slightly darker peach on hover */
         }
 
         /* Lists */
