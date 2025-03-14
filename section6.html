@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Sharp - Section 6: Creative Thinking Games</title>
+    <!-- Add Nunito font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px; /* Readable width for PDF */
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+            background-color: #f9f9f9; /* Light background for better contrast */
+        }
+
+        /* Leaderboard Image */
+        .leaderboard {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0; /* Fallback background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .leaderboard img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .leaderboard:hover img {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #FF5733; /* Warm Orange for Section 6 */
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #FF5733;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #FF5733; /* Warm Orange for Section 6 */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FF5733;
+            padding-bottom: 10px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background-color: #FF5733;
+            margin-top: 5px;
+        }
+
+        /* Paragraphs and Spacing */
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* Highlighted Text */
+        .highlight {
+            background-color: #FFDAB9; /* Soft Peach for Section 6 */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #FF5733; /* Warm Orange for consistency */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #ffccaa; /* Slightly darker peach on hover */
+            color: #e64a19; /* Darker orange on hover */
+        }
+
+        /* Lists */
+        ul, ol {
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #444;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        li::before {
+            content: '•';
+            color: #FF5733; /* Warm Orange for bullet points */
+            font-weight: bold;
+            display: inline-block;
+            width: 10px;
+            margin-left: -15px;
+            position: absolute;
+            left: 0;
+        }
+
+        li strong {
+            color: #FF5733; /* Warm Orange for game titles */
+        }
+
+        /* Interactive Buttons */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            background-color: #FF5733;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #e64a19; /* Darker orange on hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        /* Ensure PDF-friendly layout */
+        @media print {
+            body {
+                padding: 20px;
+                background-color: #fff;
+            }
+            .leaderboard {
+                page-break-after: avoid;
+            }
+            .highlight {
+                background-color: transparent;
+                color: #000;
+            }
+            .btn {
+                display: none; /* Hide buttons in print */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Leaderboard Image -->
+    <div class="leaderboard">
+        <img src="leaderboard.png" alt="Leaderboard Image">
+    </div>
+
+    <!-- Main Title -->
+    <h1>Section 6: Creative Thinking Games</h1>
+
+    <!-- Secondary Title: Welcome -->
+    <h2>Welcome to Creative Thinking Games!</h2>
+    <p>You’ve sharpened your memory and problem-solving skills—now let’s unleash your creativity! This section is filled with <span class="highlight">imaginative games</span> like storytelling and invention to spark your mind and bring joy. Let’s explore these creative adventures together!</p>
+
+    <!-- Secondary Title: Why This Works -->
+    <h2>Why This Section Works for You</h2>
+    <ul>
+        <li><span class="highlight">Boosts Imagination</span>: Games encourage new ideas and perspectives.</li>
+        <li><span class="highlight">Encourages Innovation</span>: Promotes thinking outside the box for solutions.</li>
+        <li><span class="highlight">Enhances Mood</span>: Creative expression lifts spirits and supports social engagement.</li>
+    </ul>
+
+    <!-- Secondary Title: How to Use -->
+    <h2>How to Use This Section</h2>
+    <ol>
+        <li><strong>Pick a Game</strong>: Start with any of the 9 games—each offers a unique creative challenge!</li>
+        <li><strong>Spend 5-15 Minutes</strong>: Take your time to enjoy the process—<span class="highlight">let your imagination soar!</span></li>
+        <li><strong>Use a Pencil or Voice</strong>: Write ideas, draw, or share with a friend.</li>
+        <li><strong>Celebrate Creativity</strong>: Focus on the fun of exploring, not perfection!</li>
+    </ol>
+
+    <!-- Secondary Title: Tip -->
+    <h2>A Little Tip to Start</h2>
+    <p>Try one game today and enjoy the freedom to create. You’re giving your mind a <span class="highlight">vibrant workout</span>—I’m excited to see where your imagination takes you!</p>
+
+    <!-- Call-to-Action Button -->
+    <a href="#" class="btn">Start Playing Now!</a>
+</body>
+</html>
