@@ -31,54 +31,40 @@
             align-items: center;
             justify-content: center;
             background-color: #e0e0e0; /* Fallback background */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .leaderboard img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-
-        .leaderboard:hover img {
-            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         /* Headings */
         h1 {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
             font-size: 36px;
             font-weight: 700;
-            color: #FF6F61; /* Sunset Coral for Section 7 */
+            color: #2E7D32; /* Emerald Green for Section 7 */
             text-align: center;
             margin-bottom: 40px;
             text-transform: uppercase;
             letter-spacing: 1px;
-            position: relative;
-        }
-
-        h1::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 4px;
-            background-color: #FF6F61;
-            margin: 10px auto 0;
-            border-radius: 2px;
         }
 
         h2 {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
             font-size: 24px;
             font-weight: 600;
-            color: #FF6F61; /* Sunset Coral for Section 7 */
+            color: #2E7D32; /* Emerald Green for Section 7 */
             margin-top: 40px;
             margin-bottom: 20px;
-            border-bottom: 2px solid #FF6F61;
+            border-bottom: 2px solid #2E7D32;
             padding-bottom: 10px;
         }
 
         /* Paragraphs and Spacing */
         p {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
             font-size: 16px;
             margin-bottom: 20px;
             color: #444;
@@ -86,21 +72,17 @@
 
         /* Highlighted Text */
         .highlight {
-            background-color: #F5F5DC; /* Creamy Beige for Section 7 */
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
+            background-color: #6D8299; /* Slate Blue for Section 7 */
             padding: 2px 6px;
             border-radius: 4px;
             font-weight: 600;
-            color: #FF6F61; /* Sunset Coral for consistency */
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .highlight:hover {
-            background-color: #ebebcd; /* Slightly darker beige on hover */
-            color: #e65a50; /* Darker coral on hover */
+            color: #2E7D32; /* Emerald Green for consistency */
         }
 
         /* Lists */
         ul, ol {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
             padding-left: 30px;
             margin-bottom: 20px;
         }
@@ -114,13 +96,21 @@
         }
 
         li {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
             font-size: 16px;
             margin-bottom: 10px;
             color: #444;
         }
 
         li strong {
-            color: #FF6F61; /* Sunset Coral for game titles */
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
+            color: #2E7D32; /* Emerald Green for game titles */
+        }
+
+        /* Hover Effects for Interactive Elements */
+        .highlight:hover {
+            background-color: #5e728c; /* Slightly darker slate blue on hover */
+            transition: background-color 0.3s ease;
         }
 
         /* Ensure PDF-friendly layout */
