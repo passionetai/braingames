@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stay Sharp - Section 7: Social Connection Games</title>
+    <title>Stay Sharp - Game 49: Memory Share</title>
     <!-- Add Nunito font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -20,164 +20,180 @@
             background-color: #f9f9f9; /* Light background for better contrast */
         }
 
-        /* Leaderboard Image */
-        .leaderboard {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            overflow: hidden;
+        /* Header Section */
+        .game-header {
+            background-color: #2E7D32; /* Emerald Green for Section 7 */
+            border-radius: 15px;
+            padding: 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            background-color: #e0e0e0; /* Fallback background */
+            margin-bottom: 30px;
+            color: #fff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
-        .leaderboard img {
+        .game-header .title {
+            font-size: 28px;
+            font-weight: 700; /* Bold for emphasis */
+        }
+
+        .game-header .graphic-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden; /* Ensure images fit within the circle */
+        }
+
+        .game-header .graphic-placeholder img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Ensure images are properly scaled */
+        }
+
+        /* Main Content Section */
+        .game-content {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .task-section {
+            flex: 2;
+            background-color: #6D8299; /* Slate Blue for Section 7 */
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff; /* White text for better contrast on dark background */
+        }
+
+        .task-section .task-title {
+            font-size: 22px;
+            font-weight: 700; /* Bold for emphasis */
+            margin-bottom: 15px;
+            color: #fff; /* White text for consistency */
+        }
+
+        .task-section .image-placeholder {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden; /* Ensure images fit within the circle */
+            margin-bottom: 15px;
+        }
+
+        .task-section .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images are properly scaled */
+        }
+
+        .task-section .task-content {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .task-section .task-content .prompt {
+            font-family: 'Nunito', sans-serif; /* Consistent font */
+            background-color: #fff;
+            border: 1px solid #2E7D32;
+            border-radius: 5px;
+            padding: 8px;
+            display: inline-block;
+            margin: 5px 0;
+            font-weight: 600; /* Bold for emphasis */
+            color: #2E7D32; /* Emerald Green for consistency */
+        }
+
+        .task-section .writing-space {
+            border: 1px solid #2E7D32; /* Emerald Green border for contrast */
+            border-radius: 5px;
+            padding: 10px;
+            min-height: 100px; /* Adjusted for 5 lines */
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* Sidebar (Brain Boost) */
+        .boost-section {
+            flex: 1;
+            background-color: #6D8299; /* Slate Blue, matching task section */
+            border-radius: 10px;
+            padding: 20px;
+            color: #fff; /* White text for better contrast on dark background */
+        }
+
+        .boost-section .boost-title {
+            font-size: 20px;
+            font-weight: 700; /* Bold for emphasis */
+            margin-bottom: 15px;
+            color: #fff; /* White text for consistency */
+        }
+
+        .boost-section .boost-content {
+            font-size: 16px;
+        }
+
+        /* Hover Effects */
+        .game-header .graphic-placeholder img,
+        .task-section .image-placeholder img {
             transition: transform 0.3s ease; /* Smooth hover effect */
         }
 
-        .leaderboard:hover img {
-            transform: scale(1.05); /* Slight zoom on hover */
+        .game-header .graphic-placeholder:hover img,
+        .task-section .image-placeholder:hover img {
+            transform: scale(1.1); /* Slight zoom on hover */
         }
 
-        /* Headings */
-        h1 {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 36px;
-            font-weight: 700;
-            color: #2E7D32; /* Emerald Green for Section 7 */
-            text-align: center;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-        }
-
-        h1::after {
-            content: '';
-            display: block;
-            width: 100px;
-            height: 4px;
-            background-color: #2E7D32;
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        h2 {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 24px;
-            font-weight: 600;
-            color: #2E7D32; /* Emerald Green for Section 7 */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #2E7D32;
-            padding-bottom: 10px;
-        }
-
-        /* Paragraphs and Spacing */
-        p {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        /* Highlighted Text */
-        .highlight {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            background-color: #6D8299; /* Slate Blue for Section 7 */
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #fff; /* White text for better visibility */
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .highlight:hover {
-            background-color: #5e728c; /* Slightly darker slate blue on hover */
-            color: #fff; /* Ensure text remains white on hover */
-        }
-
-        /* Lists */
-        ul, ol {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
-
-        li {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        li strong {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            color: #2E7D32; /* Emerald Green for game titles */
-        }
-
-        /* Ensure PDF-friendly layout */
+        /* PDF Optimization */
         @media print {
             body {
                 padding: 20px;
                 background-color: #fff;
             }
-            .leaderboard {
-                page-break-after: avoid;
-            }
-            .highlight {
-                background-color: transparent;
-                color: #000;
+            .game-header, .game-content {
+                page-break-inside: avoid;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Leaderboard Image -->
-    <div class="leaderboard">
-        <img src="album.png" alt="Album Icon"> <!-- Replaced with album.png -->
+    <!-- Game Header -->
+    <div class="game-header">
+        <div class="title">Game 49: Memory Share</div>
+        <div class="graphic-placeholder">
+            <img src="album.png" alt="Album Icon"> <!-- Replaced with album.png -->
+        </div>
     </div>
 
-    <!-- Main Title -->
-    <h1>Section 7: Social Connection Games</h1>
+    <!-- Game Content -->
+    <div class="game-content">
+        <!-- Task Section -->
+        <div class="task-section">
+            <div class="task-title">What to Do</div>
+            <div class="image-placeholder">
+                <img src="mem.png" alt="Memory Icon"> <!-- Replaced with mem.png -->
+            </div>
+            <div class="task-content">
+                Share a memory based on the given theme with a partner, writing 3–5 sentences or discussing aloud. Include details to make it vivid, then listen to your partner’s memory. Take 5–10 minutes to write or share. The theme is: <span class="prompt">A favorite childhood memory</span>.
+            </div>
+            <div class="writing-space">
+                My Memory:<br>
+                ___________________________<br>
+                ___________________________<br>
+                ___________________________<br>
+                ___________________________<br>
+                ___________________________
+            </div>
+        </div>
 
-    <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Social Connection Games!</h2>
-    <p>You’ve explored creativity—now let’s connect with others! This section is packed with <span class="highlight">social games</span> like memory sharing and storytelling to strengthen your bonds and spark joy. Grab a friend or family member, and let’s build connections together!</p>
-
-    <!-- Secondary Title: Why This Works -->
-    <h2>Why This Section Works for You</h2>
-    <ul>
-        <li><span class="highlight">Boosts Communication</span>: Games encourage meaningful conversations.</li>
-        <li><span class="highlight">Strengthens Bonds</span>: Promotes closer relationships through shared activities.</li>
-        <li><span class="highlight">Enhances Mood</span>: Social engagement lifts spirits and reduces isolation.</li>
-    </ul>
-
-    <!-- Secondary Title: How to Use -->
-    <h2>How to Use This Section</h2>
-    <ol>
-        <li><strong>Pick a Game</strong>: Choose from 9 games—each designed for pairs or small groups!</li>
-        <li><strong>Spend 5–15 Minutes</strong>: Enjoy connecting—<span class="highlight">focus on the fun!</span></li>
-        <li><strong>Share and Listen</strong>: Use a pencil to note ideas or simply talk and listen.</li>
-        <li><strong>Celebrate Together</strong>: Build memories while strengthening your social ties!</li>
-    </ol>
-
-    <!-- Secondary Title: Tip -->
-    <h2>A Little Tip to Start</h2>
-    <p>Invite a loved one to play a game today. You’ll both enjoy a <span class="highlight">heartwarming experience</span>—I’m excited for the connections you’ll create!</p>
+        <!-- Brain Boost Sidebar -->
+        <div class="boost-section">
+            <div class="boost-title">Brain Boost</div>
+            <div class="boost-content">
+                This game strengthens social bonding and memory recall through sharing. It also enhances emotional well-being with joyful connection!
+            </div>
+        </div>
+    </div>
 </body>
 </html>
