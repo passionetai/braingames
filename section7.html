@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Sharp - Section 7: Social Connection Games</title>
+    <!-- Add Nunito font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px; /* Readable width for PDF */
+            margin-left: auto;
+            margin-right: auto;
+            color: #333;
+            background-color: #f9f9f9; /* Light background for better contrast */
+        }
+
+        /* Leaderboard Image */
+        .leaderboard {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0; /* Fallback background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        .leaderboard img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .leaderboard:hover img {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #FF6F61; /* Sunset Coral for Section 7 */
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background-color: #FF6F61;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #FF6F61; /* Sunset Coral for Section 7 */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #FF6F61;
+            padding-bottom: 10px;
+        }
+
+        /* Paragraphs and Spacing */
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* Highlighted Text */
+        .highlight {
+            background-color: #F5F5DC; /* Creamy Beige for Section 7 */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: #FF6F61; /* Sunset Coral for consistency */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #ebebcd; /* Slightly darker beige on hover */
+            color: #e65a50; /* Darker coral on hover */
+        }
+
+        /* Lists */
+        ul, ol {
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        li strong {
+            color: #FF6F61; /* Sunset Coral for game titles */
+        }
+
+        /* Ensure PDF-friendly layout */
+        @media print {
+            body {
+                padding: 20px;
+                background-color: #fff;
+            }
+            .leaderboard {
+                page-break-after: avoid;
+            }
+            .highlight {
+                background-color: transparent;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Leaderboard Image -->
+    <div class="leaderboard">
+        <img src="leaderboard.png" alt="Leaderboard Image">
+    </div>
+
+    <!-- Main Title -->
+    <h1>Section 7: Social Connection Games</h1>
+
+    <!-- Secondary Title: Welcome -->
+    <h2>Welcome to Social Connection Games!</h2>
+    <p>You’ve explored creativity—now let’s connect with others! This section is packed with <span class="highlight">social games</span> like memory sharing and storytelling to strengthen your bonds and spark joy. Grab a friend or family member, and let’s build connections together!</p>
+
+    <!-- Secondary Title: Why This Works -->
+    <h2>Why This Section Works for You</h2>
+    <ul>
+        <li><span class="highlight">Boosts Communication</span>: Games encourage meaningful conversations.</li>
+        <li><span class="highlight">Strengthens Bonds</span>: Promotes closer relationships through shared activities.</li>
+        <li><span class="highlight">Enhances Mood</span>: Social engagement lifts spirits and reduces isolation.</li>
+    </ul>
+
+    <!-- Secondary Title: How to Use -->
+    <h2>How to Use This Section</h2>
+    <ol>
+        <li><strong>Pick a Game</strong>: Choose from 9 games—each designed for pairs or small groups!</li>
+        <li><strong>Spend 5–15 Minutes</strong>: Enjoy connecting—<span class="highlight">focus on the fun!</span></li>
+        <li><strong>Share and Listen</strong>: Use a pencil to note ideas or simply talk and listen.</li>
+        <li><strong>Celebrate Together</strong>: Build memories while strengthening your social ties!</li>
+    </ol>
+
+    <!-- Secondary Title: Tip -->
+    <h2>A Little Tip to Start</h2>
+    <p>Invite a loved one to play a game today. You’ll both enjoy a <span class="highlight">heartwarming experience</span>—I’m excited for the connections you’ll create!</p>
+</body>
+</html>
