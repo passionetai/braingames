@@ -4,136 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stay Sharp - Section 4 Introduction</title>
-    <!-- Add Nunito font from Google Fonts -->
+    <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 800px; /* Readable width for PDF */
-            margin-left: auto;
-            margin-right: auto;
-            color: #333;
-            background-color: #f9f9f9; /* Light background for better contrast */
-        }
-
-        /* Leaderboard Image */
-        .leaderboard {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e0e0e0; /* Fallback background */
-        }
-
-        .leaderboard img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Headings */
-        h1 {
-            font-size: 36px;
-            font-weight: 700;
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #008080; /* Teal Blue for Section 4 */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #008080;
-            padding-bottom: 10px;
-        }
-
-        /* Paragraphs and Spacing */
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        /* Highlighted Text */
-        .highlight {
-            background-color: #e0ffff; /* Light Cyan to match Section 4 content areas */
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #008080;
-        }
-
-        /* Lists */
-        ul, ol {
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        li strong {
-            color: #008080;
-        }
-
-        /* Hover Effects for Interactive Elements */
-        .highlight:hover {
-            background-color: #b2ebf2; /* Slightly darker cyan on hover */
-            transition: background-color 0.3s ease;
-        }
-
-        /* Ensure PDF-friendly layout */
-        @media print {
-            body {
-                padding: 20px;
-                background-color: #fff;
-            }
-            .leaderboard {
-                page-break-after: avoid;
-            }
-            .highlight {
-                background-color: transparent;
-                color: #000;
-            }
-        }
-    </style>
+    <!-- Font Awesome for dropdown icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section4">
+        <div class="container">
     <!-- Leaderboard Image -->
     <div class="leaderboard">
-        <img src="leaderboard.png" alt="Leaderboard Image">
+                <img src="banner.png" alt="Leaderboard Banner">
     </div>
 
     <!-- Main Title -->
-    <h1>Section 4: Cognitive Challenge Games</h1>
+            <h1>
+                <span class="main-title">SECTION 4</span>
+                <span class="sub-title">Cognitive Challenge Games</span>
+            </h1>
 
     <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Cognitive Challenges!</h2>
-    <p>You’ve built a strong memory foundation—now let’s stretch your brain even further! This section is all about <span class="highlight">problem-solving, logic, and reasoning</span> through fun and engaging challenges. From solving riddles to spotting patterns, these games will sharpen your <span class="highlight">mental agility</span> while keeping things enjoyable. Let’s dive in and tackle these puzzles together!</p>
+    <h2>Welcome to Advanced Memory Games!</h2>
+
+    <div class="game-navigation">
+        <a href="game21.html" class="game-button">21</a>
+        <a href="game22.html" class="game-button">22</a>
+        <a href="game23.html" class="game-button">23</a>
+        <a href="game24.html" class="game-button">24</a>
+        <a href="game25.html" class="game-button">25</a>
+        <a href="game26.html" class="game-button">26</a>
+        <a href="game27.html" class="game-button">27</a>
+        <a href="game28.html" class="game-button">28</a>
+        <a href="game29.html" class="game-button">29</a>
+        <a href="game30.html" class="game-button">30</a>
+    </div>
+
+    <p>You've built a strong memory foundation—now let's stretch your brain even further! This section is all about <span class="highlight">problem-solving, logic, and reasoning</span> through fun and engaging challenges. From solving riddles to spotting patterns, these games will sharpen your <span class="highlight">mental agility</span> while keeping things enjoyable. Let's dive in and tackle these puzzles together!</p>
 
     <!-- Secondary Title: Why This Works -->
     <h2>Why This Section Works for You</h2>
@@ -149,11 +82,34 @@
         <li><strong>Pick a Game</strong>: Choose any of the 20 games to start—each offers a unique challenge!</li>
         <li><strong>Spend 5-15 Minutes</strong>: Take your time to think through each task. <span class="highlight">No rush—just enjoy the process!</span></li>
         <li><strong>Use a Pencil or Voice</strong>: Write answers in the spaces provided, say them aloud, or discuss with a friend.</li>
-        <li><strong>Focus on the Journey</strong>: Don’t worry about getting every answer right—the mental workout is what counts!</li>
+                <li><strong>Focus on the Journey</strong>: Don't worry about getting every answer right—the mental workout is what counts!</li>
     </ol>
 
     <!-- Secondary Title: Tip -->
     <h2>A Little Tip to Start</h2>
-    <p>Start with one game today and celebrate every step forward. You’re giving your brain a <span class="highlight">fantastic workout</span>—and I’m rooting for you every step of the way!</p>
+            <p>Start with one game today and celebrate every step forward. You're giving your brain a <span class="highlight">fantastic workout</span>—and I'm rooting for you every step of the way!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

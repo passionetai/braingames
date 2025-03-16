@@ -3,162 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stay Sharp - Section 5: Problem-Solving Puzzles</title>
-    <!-- Add Nunito font from Google Fonts -->
+    <title>Stay Sharp - Section 5 Introduction</title>
+    <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            line-height: 1.8; /* Increased line height for better readability */
-            margin: 0;
-            padding: 40px;
-            max-width: 800px; /* Readable width for PDF */
-            margin-left: auto;
-            margin-right: auto;
-            color: #333;
-            background-color: #f9f9f9; /* Light background for better contrast */
-        }
-
-        /* Leaderboard Image */
-        .leaderboard {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e0e0e0; /* Fallback background */
-        }
-
-        .leaderboard img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Headings */
-        h1 {
-            font-size: 40px; /* Larger font size for main title */
-            font-weight: 800; /* Bolder font weight */
-            color: #4B0082; /* Deep Purple for Section 5 */
-            text-align: center;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 2px; /* Increased letter spacing */
-        }
-
-        h2 {
-            font-size: 28px; /* Larger font size for secondary titles */
-            font-weight: 700; /* Bolder font weight */
-            color: #4B0082; /* Deep Purple for Section 5 */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #4B0082;
-            padding-bottom: 10px;
-            letter-spacing: 1px; /* Added letter spacing */
-        }
-
-        /* Paragraphs and Spacing */
-        p {
-            font-size: 18px; /* Slightly larger font size for better readability */
-            margin-bottom: 20px;
-            color: #444;
-            line-height: 1.8; /* Increased line height */
-        }
-
-        /* Highlighted Text */
-        .highlight {
-            background-color: #D1E7DD; /* Pale Green for Section 5 */
-            padding: 4px 8px; /* Slightly larger padding */
-            border-radius: 4px;
-            font-weight: 700; /* Bolder font weight */
-            color: #4B0082; /* Deep Purple for consistency */
-            letter-spacing: 0.5px; /* Added letter spacing */
-        }
-
-        /* Lists */
-        ul, ol {
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
-
-        li {
-            font-size: 18px; /* Slightly larger font size for better readability */
-            margin-bottom: 10px;
-            color: #444;
-            line-height: 1.8; /* Increased line height */
-        }
-
-        li strong {
-            color: #4B0082; /* Deep Purple for game titles */
-            font-weight: 700; /* Bolder font weight */
-        }
-
-        /* Hover Effects for Interactive Elements */
-        .highlight:hover {
-            background-color: #b7d9cc; /* Slightly darker green on hover */
-            transition: background-color 0.3s ease;
-        }
-
-        /* Ensure PDF-friendly layout */
-        @media print {
-            body {
-                padding: 20px;
-                background-color: #fff;
-            }
-            .leaderboard {
-                page-break-after: avoid;
-            }
-            .highlight {
-                background-color: transparent;
-                color: #000;
-            }
-        }
-    </style>
+    <!-- Font Awesome for dropdown icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section1.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section5">
+        <div class="container">
     <!-- Leaderboard Image -->
     <div class="leaderboard">
-        <img src="leaderboard.png" alt="Leaderboard Image">
+                <img src="banner.png" alt="Leaderboard Banner">
     </div>
 
     <!-- Main Title -->
-    <h1>Section 5: Problem-Solving Puzzles</h1>
+            <h1>
+                <span class="main-title">SECTION 5</span>
+                <span class="sub-title">Number Games</span>
+            </h1>
 
     <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Problem-Solving Puzzles!</h2>
-    <p>You’ve honed your memory and logic—now it’s time to master problem-solving! This section is packed with <span class="highlight">engaging puzzles</span> like riddles and mazes to challenge your mind and spark your curiosity. Let’s dive into these brain-teasing adventures together!</p>
+            <h2>Welcome to Number Games!</h2>
+
+            <div class="game-navigation">
+                <a href="game31.html" class="game-button">31</a>
+                <a href="game32.html" class="game-button">32</a>
+                <a href="game33.html" class="game-button">33</a>
+                <a href="game34.html" class="game-button">34</a>
+                <a href="game35.html" class="game-button">35</a>
+                <a href="game36.html" class="game-button">36</a>
+                <a href="game37.html" class="game-button">37</a>
+                <a href="game38.html" class="game-button">38</a>
+                <a href="game39.html" class="game-button">39</a>
+            </div>
+
+            <p>Ready to have fun with numbers? This section is packed with engaging numerical puzzles that will keep your mind sharp and agile. Whether you're solving simple calculations or tackling interesting patterns, these games will help you <span class="highlight">strengthen your numerical skills</span> in an enjoyable way. Don't worry if math isn't your favorite—we'll keep it light and fun!</p>
 
     <!-- Secondary Title: Why This Works -->
     <h2>Why This Section Works for You</h2>
     <ul>
-        <li><span class="highlight">Boosts Analytical Skills</span>: Puzzles enhance critical thinking and strategy.</li>
-        <li><span class="highlight">Encourages Creativity</span>: Offers room for innovative solutions.</li>
-        <li><span class="highlight">Real-Life Application</span>: Improves decision-making for daily challenges.</li>
+                <li><span class="highlight">Brain Exercise</span>: Number games are excellent for maintaining mental sharpness.</li>
+                <li><span class="highlight">Practical Skills</span>: Improve your everyday math abilities for shopping, budgeting, and more.</li>
+                <li><span class="highlight">Progressive Challenge</span>: Start simple and gradually build your confidence with numbers.</li>
     </ul>
 
     <!-- Secondary Title: How to Use -->
     <h2>How to Use This Section</h2>
     <ol>
-        <li><strong>Pick a Puzzle</strong>: Start with any of the 9 games—each offers a unique challenge!</li>
-        <li><strong>Spend 5-15 Minutes</strong>: Take your time to solve each puzzle—<span class="highlight">enjoy the process!</span></li>
-        <li><strong>Use a Pencil or Voice</strong>: Write answers or discuss with a friend.</li>
-        <li><strong>Focus on Fun</strong>: The mental exercise matters more than perfection!</li>
+                <li><strong>Choose Your Level</strong>: Start with basic games and progress as you feel comfortable.</li>
+                <li><strong>Take Your Time</strong>: Spend 10-15 minutes per game. <span class="highlight">No pressure—enjoy the process!</span></li>
+                <li><strong>Use Paper & Pencil</strong>: Feel free to work out solutions step by step.</li>
+                <li><strong>Practice Regularly</strong>: The more you play, the more comfortable you'll become with numbers.</li>
     </ol>
 
     <!-- Secondary Title: Tip -->
     <h2>A Little Tip to Start</h2>
-    <p>Begin with one puzzle today and celebrate your progress. You’re giving your brain a <span class="highlight">powerful boost</span>—I’m cheering you on!</p>
+            <p>Remember, these games are about having fun while exercising your brain. Start with what feels comfortable and celebrate your <span class="highlight">daily progress</span>. You're doing great!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

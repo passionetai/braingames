@@ -6,131 +6,111 @@
     <title>Stay Sharp - Section 3 Introduction</title>
     <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Nunito', sans-serif; /* Modern, rounded font */
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 800px; /* Readable width for PDF */
-            margin-left: auto;
-            margin-right: auto;
-            color: #333;
-            background-color: #f9f9f9; /* Light background for better readability */
-        }
-
-        /* Leaderboard Image Placeholder */
-        .leaderboard {
-            width: 100%;
-            height: 150px;
-            background-color: #e0e0e0;
-            margin-bottom: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            font-size: 18px;
-            color: #666;
-        }
-
-        /* Headings */
-        h1 {
-            font-size: 36px;
-            font-weight: 700; /* Bold for the main title */
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-weight: 600; /* Semi-bold for subheadings */
-            color: #e67e22; /* Medium-dark orange for title bar */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #e67e22; /* Add a subtle underline */
-            padding-bottom: 10px;
-        }
-
-        /* Paragraphs and Spacing */
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #444; /* Slightly darker text for better readability */
-        }
-
-        /* Highlighted Text */
-        .highlight {
-            background-color: #ffeaa7; /* Soft yellow highlight */
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600; /* Semi-bold for highlighted text */
-        }
-
-        /* Lists */
-        ul, ol {
-            list-style-type: disc;
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #444; /* Slightly darker text for better readability */
-        }
-
-        ol {
-            list-style-type: decimal; /* Use numbers for ordered lists */
-        }
-
-        /* Ensure PDF-friendly layout */
-        @media print {
-            body {
-                padding: 20px;
-                background-color: #fff; /* White background for printing */
-            }
-            .leaderboard {
-                page-break-after: avoid;
-            }
-            .highlight {
-                background-color: transparent; /* Remove highlight for printing */
-                border: 1px solid #333; /* Add border for better visibility */
-            }
-        }
-    </style>
+    <!-- Font Awesome for dropdown icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Leaderboard Image Placeholder -->
-    <div class="leaderboard">Leaderboard Image Placeholder (728x90px Recommended)</div>
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Main Title -->
-    <h1>Section 3: Memory Mastery Games</h1>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section3">
+        <div class="container">
+            <!-- Leaderboard Image -->
+            <div class="leaderboard">
+                <img src="banner.png" alt="Leaderboard Banner">
+            </div>
 
-    <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Memory Mastery!</h2>
-    <p>You’ve warmed up with the Quick-Start games—now let’s take it up a notch! This section is all about strengthening your <span class="highlight">short- and long-term memory</span> with fun, slightly more challenging exercises. Whether it’s recalling a story, a list, or a special moment, these games will help you <span class="highlight">build a sharper mind</span> while enjoying the journey. Don’t worry—we’ll keep it simple and supportive every step of the way!</p>
+            <!-- Main Title -->
+            <h1>
+                <span class="main-title">SECTION 3</span>
+                <span class="sub-title">Memory Mastery Games</span>
+            </h1>
 
-    <!-- Secondary Title: Why This Works -->
-    <h2>Why This Section Works for You</h2>
-    <ul>
-        <li><span class="highlight">Boosts Memory</span>: Each game targets a different memory skill to keep your brain strong.</li>
-        <li><span class="highlight">Step-by-Step Challenges</span>: Designed to stretch your memory gently, with clear steps.</li>
-        <li><span class="highlight">Real-Life Benefits</span>: Improves recall for daily tasks like names, dates, and events.</li>
-    </ul>
+            <!-- Secondary Title: Welcome -->
+            <h2>Welcome to Memory Mastery!</h2>
 
-    <!-- Secondary Title: How to Use -->
-    <h2>How to Use This Section</h2>
-    <ol>
-        <li><strong>Pick a Game</strong>: Start with any game that catches your eye—there are 20 to choose from!</li>
-        <li><strong>Spend 5-15 Minutes</strong>: Take your time with each game. <span class="highlight">No rush—enjoy the challenge!</span></li>
-        <li><strong>Use a Pencil or Voice</strong>: Write answers in the spaces provided or say them aloud.</li>
-        <li><strong>Repeat Weekly</strong>: Revisit your favorite games to track your improvement over time.</li>
-    </ol>
+            <!-- Game Navigation -->
+            <div class="game-navigation">
+                <a href="game11.html" class="game-button">Game 11</a>
+                <a href="game12.html" class="game-button">Game 12</a>
+                <a href="game13.html" class="game-button">Game 13</a>
+                <a href="game14.html" class="game-button">Game 14</a>
+                <a href="game15.html" class="game-button">Game 15</a>
+                <a href="game16.html" class="game-button">Game 16</a>
+                <a href="game17.html" class="game-button">Game 17</a>
+                <a href="game18.html" class="game-button">Game 18</a>
+                <a href="game19.html" class="game-button">Game 19</a>
+                <a href="game20.html" class="game-button">Game 20</a>
+            </div>
 
-    <!-- Secondary Title: Tip -->
-    <h2>A Little Tip to Start</h2>
-    <p>Dive into one game today and celebrate every win, big or small. You’re building a <span class="highlight">stronger memory every day</span>—and I’m cheering you on!</p>
+            <p>You've warmed up with the Quick-Start games—now let's take it up a notch! This section is all about strengthening your <span class="highlight">short- and long-term memory</span> with fun, slightly more challenging exercises. Whether it's recalling a story, a list, or a special moment, these games will help you <span class="highlight">build a sharper mind</span> while enjoying the journey. Don't worry—we'll keep it simple and supportive every step of the way!</p>
+
+            <!-- Secondary Title: Why This Works -->
+            <h2>Why This Section Works for You</h2>
+            <ul>
+                <li><span class="highlight">Boosts Memory</span>: Each game targets a different memory skill to keep your brain strong.</li>
+                <li><span class="highlight">Step-by-Step Challenges</span>: Designed to stretch your memory gently, with clear steps.</li>
+                <li><span class="highlight">Real-Life Benefits</span>: Improves recall for daily tasks like names, dates, and events.</li>
+            </ul>
+
+            <!-- Secondary Title: How to Use -->
+            <h2>How to Use This Section</h2>
+            <ol>
+                <li><strong>Pick a Game</strong>: Start with any game that catches your eye—there are 20 to choose from!</li>
+                <li><strong>Spend 5-15 Minutes</strong>: Take your time with each game. <span class="highlight">No rush—enjoy the challenge!</span></li>
+                <li><strong>Use a Pencil or Voice</strong>: Write answers in the spaces provided or say them aloud.</li>
+                <li><strong>Repeat Weekly</strong>: Revisit your favorite games to track your improvement over time.</li>
+            </ol>
+
+            <!-- Secondary Title: Tip -->
+            <h2>A Little Tip to Start</h2>
+            <p>Dive into one game today and celebrate every win, big or small. You're building a <span class="highlight">stronger memory every day</span>—and I'm cheering you on!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

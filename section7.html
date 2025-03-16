@@ -3,164 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stay Sharp - Section 7: Social Connection Games</title>
-    <!-- Add Nunito font from Google Fonts -->
+    <title>Stay Sharp - Section 7 Introduction</title>
+    <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 800px; /* Readable width for PDF */
-            margin-left: auto;
-            margin-right: auto;
-            color: #333;
-            background-color: #f9f9f9; /* Light background for better contrast */
-        }
-
-        /* Leaderboard Image */
-        .leaderboard {
-            width: 100%;
-            height: 150px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #e0e0e0; /* Fallback background */
-        }
-
-        .leaderboard img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Headings */
-        h1 {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 36px;
-            font-weight: 700;
-            color: #2E7D32; /* Emerald Green for Section 7 */
-            text-align: center;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        h2 {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 24px;
-            font-weight: 600;
-            color: #2E7D32; /* Emerald Green for Section 7 */
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #2E7D32;
-            padding-bottom: 10px;
-        }
-
-        /* Paragraphs and Spacing */
-        p {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        /* Highlighted Text */
-        .highlight {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            background-color: #6D8299; /* Slate Blue for Section 7 */
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: 600;
-            color: #fff; /* White text for better visibility */
-        }
-
-        /* Lists */
-        ul, ol {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            padding-left: 30px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
-
-        li {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #444;
-        }
-
-        li strong {
-            font-family: 'Nunito', sans-serif; /* Smooth, rounded font */
-            color: #2E7D32; /* Emerald Green for game titles */
-        }
-
-        /* Hover Effects for Interactive Elements */
-        .highlight:hover {
-            background-color: #5e728c; /* Slightly darker slate blue on hover */
-            transition: background-color 0.3s ease;
-        }
-
-        /* Ensure PDF-friendly layout */
-        @media print {
-            body {
-                padding: 20px;
-                background-color: #fff;
-            }
-            .leaderboard {
-                page-break-after: avoid;
-            }
-            .highlight {
-                background-color: transparent;
-                color: #000;
-            }
-        }
-    </style>
+    <!-- Font Awesome for dropdown icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Leaderboard Image -->
-    <div class="leaderboard">
-        <img src="leaderboard.png" alt="Leaderboard Image">
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Main Title -->
-    <h1>Section 7: Social Connection Games</h1>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section7">
+        <div class="container">
+            <!-- Leaderboard Image -->
+            <div class="leaderboard">
+                <img src="banner.png" alt="Leaderboard Banner">
+            </div>
 
-    <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Social Connection Games!</h2>
-    <p>You’ve explored creativity—now let’s connect with others! This section is packed with <span class="highlight">social games</span> like memory sharing and storytelling to strengthen your bonds and spark joy. Grab a friend or family member, and let’s build connections together!</p>
+            <!-- Main Title -->
+            <h1>
+                <span class="main-title">SECTION 7</span>
+                <span class="sub-title">Logic & Reasoning</span>
+            </h1>
 
-    <!-- Secondary Title: Why This Works -->
-    <h2>Why This Section Works for You</h2>
-    <ul>
-        <li><span class="highlight">Boosts Communication</span>: Games encourage meaningful conversations.</li>
-        <li><span class="highlight">Strengthens Bonds</span>: Promotes closer relationships through shared activities.</li>
-        <li><span class="highlight">Enhances Mood</span>: Social engagement lifts spirits and reduces isolation.</li>
-    </ul>
+            <!-- Secondary Title: Welcome -->
+            <h2>Welcome to Logic & Reasoning!</h2>
 
-    <!-- Secondary Title: How to Use -->
-    <h2>How to Use This Section</h2>
-    <ol>
-        <li><strong>Pick a Game</strong>: Choose from 9 games—each designed for pairs or small groups!</li>
-        <li><strong>Spend 5–15 Minutes</strong>: Enjoy connecting—<span class="highlight">focus on the fun!</span></li>
-        <li><strong>Share and Listen</strong>: Use a pencil to note ideas or simply talk and listen.</li>
-        <li><strong>Celebrate Together</strong>: Build memories while strengthening your social ties!</li>
-    </ol>
+            <div class="game-navigation">
+                <a href="game49.html" class="game-button">49</a>
+                <a href="game50.html" class="game-button">50</a>
+                <a href="game51.html" class="game-button">51</a>
+                <a href="game52.html" class="game-button">52</a>
+                <a href="game53.html" class="game-button">53</a>
+                <a href="game54.html" class="game-button">54</a>
+                <a href="game55.html" class="game-button">55</a>
+                <a href="game56.html" class="game-button">56</a>
+                <a href="game57.html" class="game-button">57</a>
+            </div>
 
-    <!-- Secondary Title: Tip -->
-    <h2>A Little Tip to Start</h2>
-    <p>Invite a loved one to play a game today. You’ll both enjoy a <span class="highlight">heartwarming experience</span>—I’m excited for the connections you’ll create!</p>
+            <p>Step into the world of logical thinking and deductive reasoning! This section offers challenging puzzles that will strengthen your <span class="highlight">analytical skills</span> and help you approach problems systematically. From simple deductions to complex logic chains, these exercises will sharpen your mind!</p>
+
+            <!-- Secondary Title: Why This Works -->
+            <h2>Why This Section Works for You</h2>
+            <ul>
+                <li><span class="highlight">Critical Thinking</span>: Develops your ability to analyze and solve complex problems.</li>
+                <li><span class="highlight">Decision Making</span>: Improves your capacity to make logical, well-reasoned choices.</li>
+                <li><span class="highlight">Problem Solving</span>: Enhances your systematic approach to challenges.</li>
+            </ul>
+
+            <!-- Secondary Title: How to Use -->
+            <h2>How to Use This Section</h2>
+            <ol>
+                <li><strong>Choose Your Challenge</strong>: Start with basic logic puzzles and progress to more complex ones.</li>
+                <li><strong>Take Your Time</strong>: Spend 15-20 minutes per puzzle. <span class="highlight">Focus on understanding the process!</span></li>
+                <li><strong>Write It Down</strong>: Use paper to track your reasoning steps.</li>
+                <li><strong>Review Solutions</strong>: Learn from each puzzle's solution to improve your approach.</li>
+            </ol>
+
+            <!-- Secondary Title: Tip -->
+            <h2>A Little Tip to Start</h2>
+            <p>Remember that logical thinking is a skill that grows with practice. Start with simpler puzzles and celebrate your <span class="highlight">progress</span> as you tackle more challenging ones!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

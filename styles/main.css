@@ -1,0 +1,646 @@
+/* Global Styles */
+:root {
+    /* Color Palette */
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --text-color: #333;
+    --light-bg: #f8f9fa;
+    --highlight-color: #ffeaa7;
+    --white: #fff;
+    --menu-hover-bg: rgba(0, 0, 0, 0.05);
+    --dark-orange: #d35400;
+    
+    /* Spacing */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 40px;
+    
+    /* Container Widths */
+    --container-width: 800px;
+    
+    /* Font Sizes */
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --font-size-xl: 36px;
+    --font-size-xxl: 56px;
+
+    /* Animation Timing */
+    --transition-speed: 0.3s;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+h1 .main-title {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: block;
+    line-height: 1.2;
+    border-bottom: none;
+}
+
+h1 .sub-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+    margin-top: var(--spacing-sm);
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    text-transform: capitalize;
+    border-bottom: 2px solid var(--section-color);
+    padding-bottom: var(--spacing-xs);
+}
+
+p {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Mega Menu Styles */
+.mega-menu-container {
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: box-shadow var(--transition-speed) ease;
+}
+
+.mega-menu-container:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--spacing-md);
+    background: var(--white);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: var(--font-size-lg);
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 5px;
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-toggle:hover {
+    color: var(--secondary-color);
+    background: var(--menu-hover-bg);
+}
+
+.menu-toggle:active {
+    transform: scale(0.95);
+}
+
+.menu-toggle.active {
+    transform: rotate(180deg);
+    background: var(--menu-hover-bg);
+}
+
+.mega-menu {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    display: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform-origin: top;
+    transition: transform var(--transition-speed) ease, opacity var(--transition-speed) ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.mega-menu.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section-button {
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: var(--light-bg);
+    border: 2px solid var(--section-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    min-width: 200px;
+    text-align: center;
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.section-button:hover {
+    background: var(--dark-orange);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-color: var(--dark-orange);
+}
+
+.section-button:hover::before {
+    left: 100%;
+}
+
+.section-button:active {
+    transform: translateY(0);
+    background: #a04000;
+    border-color: #a04000;
+}
+
+/* Content Layout */
+.content-wrapper {
+    margin-top: 70px;
+    padding: var(--spacing-xl) 0;
+}
+
+/* Common Components */
+.leaderboard {
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.leaderboard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Lists */
+ul, ol {
+    list-style-type: disc;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+li {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-sm);
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Utility Classes */
+.highlight {
+    background-color: var(--highlight-color);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Section-specific Colors */
+.section1 { --section-color: #e67e22; }
+.section2 { --section-color: #2ecc71; }
+.section3 { --section-color: #2ecc71; }
+.section4 { --section-color: #1E847F; }
+.section5 { --section-color: #4B0082; }
+.section6 { --section-color: #FF4500; }
+.section7 { --section-color: #2E5A4C; }
+.section8 { --section-color: #FFA500; }
+.section9 { --section-color: #228B22; }
+
+/* Section Color Applications */
+[class*="section"] h2 {
+    color: var(--section-color);
+}
+
+[class*="section"] .section-button {
+    border-color: var(--section-color);
+}
+
+[class*="section"] .section-button:hover {
+    background-color: var(--dark-orange);
+    border-color: var(--dark-orange);
+}
+
+[class*="section"] .section-button:active {
+    background-color: #a04000;
+    border-color: #a04000;
+}
+
+/* Section 2 heading color overrides */
+.section2 h1 .main-title,
+.section2 h1 .sub-title {
+    color: #2ecc71;
+}
+
+.section2 h2 {
+    color: #2ecc71;
+    border-bottom-color: #2ecc71;
+}
+
+/* Update section2 specific styles */
+.section2 .game-button {
+    border-color: #2ecc71;
+}
+
+.section2 .game-button::before {
+    background: #2ecc71;
+}
+
+.section2 .game-button:hover {
+    border-color: #27ae60;
+}
+
+.section2 .game-button:active {
+    border-color: #219a52;
+    background: #219a52;
+}
+
+/* Section 4 heading color overrides */
+.section4 h1 .main-title,
+.section4 h1 .sub-title {
+    color: #1E847F;
+}
+
+.section4 h2 {
+    color: #1E847F;
+    border-bottom-color: #1E847F;
+}
+
+/* Section 4 game button styles */
+.section4 .game-button {
+    border-color: #1E847F;
+}
+
+.section4 .game-button::before {
+    background: #1E847F;
+}
+
+.section4 .game-button:hover {
+    border-color: #186c68;
+}
+
+.section4 .game-button:active {
+    border-color: #145956;
+    background: #145956;
+}
+
+/* Section 5 heading color overrides */
+.section5 h1 .main-title,
+.section5 h1 .sub-title {
+    color: #4B0082;
+}
+
+.section5 h2 {
+    color: #4B0082;
+    border-bottom-color: #4B0082;
+}
+
+/* Section 5 game button styles */
+.section5 .game-button {
+    border-color: #4B0082;
+}
+
+.section5 .game-button::before {
+    background: #4B0082;
+}
+
+.section5 .game-button:hover {
+    border-color: #3B0066;
+}
+
+.section5 .game-button:active {
+    border-color: #2B004C;
+    background: #2B004C;
+}
+
+/* Section 6 heading color overrides */
+.section6 h1 .main-title,
+.section6 h1 .sub-title {
+    color: #FF4500;
+}
+
+.section6 h2 {
+    color: #FF4500;
+    border-bottom-color: #FF4500;
+}
+
+/* Section 6 game button styles */
+.section6 .game-button {
+    border-color: #FF4500;
+}
+
+.section6 .game-button::before {
+    background: #FF4500;
+}
+
+.section6 .game-button:hover {
+    border-color: #E63E00;
+}
+
+.section6 .game-button:active {
+    border-color: #CC3700;
+    background: #CC3700;
+}
+
+/* Section 7 heading color overrides */
+.section7 h1 .main-title,
+.section7 h1 .sub-title {
+    color: #2E5A4C;
+}
+
+.section7 h2 {
+    color: #2E5A4C;
+    border-bottom-color: #2E5A4C;
+}
+
+/* Section 7 game button styles */
+.section7 .game-button {
+    border-color: #2E5A4C;
+}
+
+.section7 .game-button::before {
+    background: #2E5A4C;
+}
+
+.section7 .game-button:hover {
+    border-color: #234839;
+    color: var(--white);
+}
+
+.section7 .game-button:active {
+    border-color: #1A3628;
+    background: #1A3628;
+}
+
+/* Section 7 highlight styles */
+.section7 .highlight {
+    background-color: #E8F5E9;
+    color: #2E5A4C;
+    font-weight: 600;
+}
+
+.section7 .highlight:hover {
+    background-color: #C8E6C9;
+}
+
+/* Section 8 heading color overrides */
+.section8 h1 .main-title,
+.section8 h1 .sub-title {
+    color: #FFA500;
+}
+
+.section8 h2 {
+    color: #FFA500;
+    border-bottom-color: #FFA500;
+}
+
+/* Section 8 game button styles */
+.section8 .game-button {
+    border-color: #FFA500;
+}
+
+.section8 .game-button::before {
+    background: #FFA500;
+}
+
+.section8 .game-button:hover {
+    border-color: #FF8C00;
+}
+
+.section8 .game-button:active {
+    border-color: #FF7000;
+    background: #FF7000;
+}
+
+/* Section 8 highlight styles */
+.section8 .highlight {
+    background-color: #FFF3E0;
+    color: #FFA500;
+    font-weight: 600;
+}
+
+.section8 .highlight:hover {
+    background-color: #FFE0B2;
+}
+
+/* Section 9 heading color overrides */
+.section9 h1 .main-title,
+.section9 h1 .sub-title {
+    color: #228B22;
+}
+
+.section9 h2 {
+    color: #228B22;
+    border-bottom-color: #228B22;
+}
+
+/* Section 9 game button styles */
+.section9 .game-button {
+    border-color: #228B22;
+}
+
+.section9 .game-button::before {
+    background: #228B22;
+}
+
+.section9 .game-button:hover {
+    border-color: #1B6B1B;
+}
+
+.section9 .game-button:active {
+    border-color: #145214;
+    background: #145214;
+}
+
+/* Section 9 highlight styles */
+.section9 .highlight {
+    background-color: #E8F5E9;
+    color: #228B22;
+    font-weight: 600;
+}
+
+.section9 .highlight:hover {
+    background-color: #C8E6C9;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        padding: var(--spacing-md);
+    }
+    
+    .mega-menu-container {
+        display: none;
+    }
+    
+    .content-wrapper {
+        margin-top: 0;
+    }
+    
+    .highlight {
+        background-color: transparent;
+        border: 1px solid var(--text-color);
+    }
+}
+
+/* Game Navigation Styles */
+.game-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 15px;
+    background: var(--light-bg);
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.game-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid var(--section-color);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.game-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: var(--section-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: -1;
+}
+
+.game-button:hover {
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.game-button:hover::before {
+    width: 150%;
+    height: 150%;
+}
+
+.game-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Update section2 specific styles */
+.section2 .game-button {
+    border-color: var(--section-color);
+}
+
+.section2 .game-button::before {
+    background: var(--section-color);
+}
+
+/* Add section3 specific styles */
+.section3 .game-button {
+    border-color: var(--dark-orange);
+}
+
+.section3 .game-button::before {
+    background: var(--dark-orange);
+}
+
+.section3 .game-button:hover {
+    border-color: var(--dark-orange);
+}
+
+.section3 .game-button:active {
+    border-color: #a04000;
+}
+
+/* Section 3 heading color overrides */
+.section3 h1 .main-title,
+.section3 h1 .sub-title {
+    color: var(--dark-orange);
+}
+
+.section3 h2 {
+    color: var(--dark-orange);
+    border-bottom-color: var(--dark-orange);
+} 
