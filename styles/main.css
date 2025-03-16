@@ -89,6 +89,7 @@ p {
 
 /* Mega Menu Styles */
 .mega-menu-container {
+    display: none; /* Hide the mega menu by default */
     width: 100%;
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -214,7 +215,7 @@ p {
 
 /* Content Layout */
 .content-wrapper {
-    margin-top: 70px;
+    margin-top: 20px; /* Reduced from 70px since menu is now hidden */
     padding: var(--spacing-xl) 0;
 }
 
@@ -643,4 +644,4 @@ ol {
 .section3 h2 {
     color: var(--dark-orange);
     border-bottom-color: var(--dark-orange);
-} 
+}
