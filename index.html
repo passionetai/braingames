@@ -6,17 +6,108 @@
     <title>Stay Sharp - Section 1</title>
     <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for dropdown icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
     <style>
         /* Global Styles */
         body {
             font-family: 'Nunito', sans-serif; /* Modern, rounded font */
             line-height: 1.6;
             margin: 0;
-            padding: 40px;
+            padding: 0;
             max-width: 800px; /* Readable width for PDF */
             margin-left: auto;
             margin-right: auto;
             color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Mega Menu Styles */
+        .mega-menu-container {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .menu-header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            background: #fff;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #2c3e50;
+            padding: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-toggle:hover {
+            color: #e67e22;
+        }
+
+        .menu-toggle.active {
+            transform: rotate(180deg);
+        }
+
+        .mega-menu {
+            background: #fff;
+            padding: 30px;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .mega-menu.active {
+            display: block;
+        }
+
+        .section-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-button {
+            padding: 15px 30px;
+            background: #f8f9fa;
+            border: 2px solid #e67e22;
+            border-radius: 8px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .section-button:hover {
+            background: #e67e22;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Adjust existing content to account for fixed header */
+        .content-wrapper {
+            margin-top: 70px;
+            padding: 40px 0;
         }
 
         /* Leaderboard Image */
@@ -49,6 +140,10 @@
             text-transform: uppercase; /* Capitalizes the text */
             display: block; /* Ensures it's on its own line */
             line-height: 1.2; /* Adjust line height for better spacing */
+            border-bottom: 3px solid #e67e22; /* Add orange underline */
+            padding-bottom: 10px; /* Add space between text and underline */
+            display: inline-block; /* Make border only as wide as the text */
+            margin-bottom: 10px;
         }
 
         h1 .sub-title {
@@ -57,6 +152,9 @@
             color: #2c3e50;
             display: block; /* Ensures it's on its own line */
             margin-top: 10px; /* Adds spacing between the main title and subheading */
+            border-bottom: 2px solid #e67e22; /* Add orange underline */
+            padding-bottom: 5px; /* Add space between text and underline */
+            display: inline-block; /* Make border only as wide as the text */
         }
 
         /* Secondary Headings */
@@ -66,6 +164,9 @@
             color: #34495e;
             margin-top: 40px;
             margin-bottom: 20px;
+            border-bottom: 2px solid #e67e22; /* Add orange underline */
+            padding-bottom: 8px; /* Add space between text and underline */
+            display: inline-block; /* Make border only as wide as the text */
         }
 
         /* Paragraphs and Spacing */
@@ -106,41 +207,91 @@
     </style>
 </head>
 <body>
-    <!-- Leaderboard Image -->
-    <div class="leaderboard">
-        <img src="banner.png" alt="Leaderboard Banner">
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Main Title -->
-    <h1>
-        <span class="main-title">STAY SHARP</span>
-        <span class="sub-title">77 Brain Games & Memory Boosters for Seniors</span>
-    </h1>
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section1">
+        <div class="container">
+            <!-- Leaderboard Image -->
+            <div class="leaderboard">
+                <img src="banner.png" alt="Leaderboard Banner">
+            </div>
 
-    <!-- Secondary Title: Welcome -->
-    <h2>Welcome to Stay Sharp!</h2>
-    <p>Hello, friend! You’re holding a treasure chest of <span class="highlight">77 fun brain games and memory boosters</span> designed just for YOU. Why? Because keeping your mind sharp matters—whether it’s remembering a grandchild’s birthday or staying quick on your feet. Studies show a little daily brain play can boost memory, lift your mood, and help you <span class="highlight">stay independent longer</span>. And don’t worry—no fancy skills or tech needed. If you can smile and pick up a pencil, you’re ready!</p>
+            <!-- Main Title -->
+            <h1>
+                <span class="main-title">STAY SHARP</span>
+                <span class="sub-title">77 Brain Games & Memory Boosters for Seniors</span>
+            </h1>
 
-    <!-- Secondary Title: Why This Works -->
-    <h2>Why This Guide Works for You</h2>
-    <ul>
-        <li><span class="highlight">Simple & Fun</span>: Games take just 5-10 minutes—no stress, all enjoyment.</li>
-        <li><span class="highlight">Made for Seniors</span>: Big print, clear steps, and exercises you’ll love.</li>
-        <li><span class="highlight">Proven Results</span>: These activities spark your brain cells to keep you sharp.</li>
-    </ul>
+            <!-- Secondary Title: Welcome -->
+            <h2>Welcome to Stay Sharp!</h2>
+            <p>Hello, friend! You're holding a treasure chest of <span class="highlight">77 fun brain games and memory boosters</span> designed just for YOU. Why? Because keeping your mind sharp matters—whether it's remembering a grandchild's birthday or staying quick on your feet. Studies show a little daily brain play can boost memory, lift your mood, and help you <span class="highlight">stay independent longer</span>. And don't worry—no fancy skills or tech needed. If you can smile and pick up a pencil, you're ready!</p>
 
-    <!-- Secondary Title: How to Use -->
-    <h2>How to Use This Guide</h2>
-    <ol>
-        <li><strong>Pick a Game</strong>: Flip to any section—start easy with "Brain Warm-Ups" or dive into "Memory Mastery."</li>
-        <li><strong>Spend a Few Minutes</strong>: Try 1-2 games a day. <span class="highlight">No rush—go at your pace!</span></li>
-        <li><strong>Grab a Pencil</strong>: Jot answers in the spaces provided or say them aloud.</li>
-        <li><strong>Track Your Wins</strong>: Use the checklist at the end to cheer yourself on.</li>
-        <li><strong>Repeat & Enjoy</strong>: Mix it up daily or revisit favorites—your brain will thank you!</li>
-    </ol>
+            <!-- Secondary Title: Why This Works -->
+            <h2>Why This Guide Works for You</h2>
+            <ul>
+                <li><span class="highlight">Simple & Fun</span>: Games take just 5-10 minutes—no stress, all enjoyment.</li>
+                <li><span class="highlight">Made for Seniors</span>: Big print, clear steps, and exercises you'll love.</li>
+                <li><span class="highlight">Proven Results</span>: These activities spark your brain cells to keep you sharp.</li>
+            </ul>
 
-    <!-- Secondary Title: Tip -->
-    <h2>A Little Tip to Start</h2>
-    <p>Start small—try one game today. You’ll be amazed at how good it feels to give your mind a <span class="highlight">playful workout</span>. You’ve got this, and I’m rooting for you every step of the way!</p>
+            <!-- Secondary Title: How to Use -->
+            <h2>How to Use This Guide</h2>
+            <ol>
+                <li><strong>Pick a Game</strong>: Flip to any section—start easy with "Brain Warm-Ups" or dive into "Memory Mastery."</li>
+                <li><strong>Spend a Few Minutes</strong>: Try 1-2 games a day. <span class="highlight">No rush—go at your pace!</span></li>
+                <li><strong>Grab a Pencil</strong>: Jot answers in the spaces provided or say them aloud.</li>
+                <li><strong>Track Your Wins</strong>: Use the checklist at the end to cheer yourself on.</li>
+                <li><strong>Repeat & Enjoy</strong>: Mix it up daily or revisit favorites—your brain will thank you!</li>
+            </ol>
+
+            <!-- Secondary Title: Tip -->
+            <h2>A Little Tip to Start</h2>
+            <p>Start small—try one game today. You'll be amazed at how good it feels to give your mind a <span class="highlight">playful workout</span>. You've got this, and I'm rooting for you every step of the way!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
