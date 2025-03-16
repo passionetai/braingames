@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Sharp - Game 77: Life Story Timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #333333;
+            background-color: #f9f9f9;
+        }
+
+        /* Header Section */
+        .game-header {
+            background-color: #2E7D32; /* Deep Forest Green */
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .game-header .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .game-header .graphic-placeholder {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .game-header .graphic-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main Content Section */
+        .game-content {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .task-section {
+            flex: 2;
+            background-color: #80CBC4; /* Soft Teal */
+            border-radius: 10px;
+            padding: 20px;
+            color: #333333;
+        }
+
+        .task-section .task-title {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+
+        .task-section .image-placeholder {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .task-section .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .task-section .task-content {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Grid-based Writing Section */
+        .task-section .writing-space {
+            border: 1px solid #2E7D32;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            color: #333333;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr; /* Three columns: Year | Event | Feeling */
+            gap: 10px;
+        }
+
+        .task-section .writing-space div {
+            padding: 5px;
+        }
+
+        .task-section .writing-space div:nth-child(3n + 1) {
+            font-weight: bold; /* Emphasize year column */
+            text-align: left;
+        }
+
+        .task-section .writing-space div:nth-child(3n + 2) {
+            text-align: left; /* Align event descriptions */
+        }
+
+        .task-section .writing-space div:nth-child(3n + 3) {
+            font-style: italic; /* Style feelings column */
+            text-align: left;
+        }
+
+        /* Sidebar (Brain Boost) */
+        .boost-section {
+            flex: 1;
+            background-color: #80CBC4;
+            border-radius: 10px;
+            padding: 20px;
+            color: #333333;
+        }
+
+        .boost-section .boost-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+
+        .boost-section .boost-content {
+            font-size: 16px;
+        }
+
+        /* PDF Optimization */
+        @media print {
+            body {
+                padding: 20px;
+            }
+            .game-header, .game-content {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Game Header -->
+    <div class="game-header">
+        <div class="title">Game 77: Life Story Timeline</div>
+        <div class="graphic-placeholder">
+            <img src="life.png" alt="Life Image">
+        </div>
+    </div>
+
+    <!-- Game Content -->
+    <div class="game-content">
+        <!-- Task Section -->
+        <div class="task-section">
+            <div class="task-title">What to Do</div>
+            <div class="image-placeholder">
+                <img src="women.png" alt="Women Image">
+            </div>
+            <div class="task-content">
+                Reflect on your life's journey: List 5-7 key moments. Jot down the year, what happened, and how you felt. Afterwards, consider which you would share and why.
+            </div>
+            <div class="writing-space">
+                <div>Year</div>
+                <div>Event:</div>
+                <div>Feelings:</div>
+                <div>1.</div>
+                <div>2.</div>
+                <div></div>
+                <div>3.</div>
+                <div>4.</div>
+                <div></div>
+                <div>5.</div>
+                <div>6.</div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- Brain Boost Sidebar -->
+        <div class="boost-section">
+            <div class="boost-title">Brain Boost</div>
+            <div class="boost-content">
+                This game strengthens emotional connections. The power of personal reminiscence also brings joy and power with past stories.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
