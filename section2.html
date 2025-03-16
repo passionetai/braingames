@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Sharp - Section 2 Introduction</title>
+    <!-- Add Google Fonts link for a rounded font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for dropdown icon and chat interface -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Mega Menu -->
+    <div class="mega-menu-container">
+        <div class="container">
+            <div class="menu-header">
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="mega-menu">
+                <div class="section-buttons">
+                    <a href="index.html" class="section-button">Section 1: Quick Start</a>
+                    <a href="section2.html" class="section-button">Section 2: Brain Warm-Ups</a>
+                    <a href="section3.html" class="section-button">Section 3: Memory Mastery</a>
+                    <a href="section4.html" class="section-button">Section 4: Word Play</a>
+                    <a href="section5.html" class="section-button">Section 5: Number Games</a>
+                    <a href="section6.html" class="section-button">Section 6: Visual Puzzles</a>
+                    <a href="section7.html" class="section-button">Section 7: Logic & Reasoning</a>
+                    <a href="section8.html" class="section-button">Section 8: Creative Thinking</a>
+                    <a href="section9.html" class="section-button">Section 9: Brain Boosters</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper section2">
+        <div class="container">
+            <!-- Leaderboard Image -->
+            <div class="leaderboard">
+                <img src="banner.png" alt="Leaderboard Banner">
+            </div>
+
+            <!-- Main Title -->
+            <h1>
+                <span class="main-title">SECTION 2</span>
+                <span class="sub-title">Quick-Start Memory Games</span>
+            </h1>
+
+            <!-- Secondary Title: Welcome -->
+            <h2>Welcome to Quick-Start Memory Games!</h2>
+
+            <!-- Game Navigation -->
+            <div class="game-navigation">
+                <a href="game1.html" class="game-button">1</a>
+                <a href="game2.html" class="game-button">2</a>
+                <a href="game3.html" class="game-button">3</a>
+                <a href="game4.html" class="game-button">4</a>
+                <a href="game5.html" class="game-button">5</a>
+                <a href="game6.html" class="game-button">6</a>
+                <a href="game7.html" class="game-button">7</a>
+                <a href="game8.html" class="game-button">8</a>
+                <a href="game9.html" class="game-button">9</a>
+                <a href="game10.html" class="game-button">10</a>
+            </div>
+
+            <p>Let's get your brain warmed up with some fun and easy memory games! This section is designed to help you build <span class="highlight">confidence in your memory</span> through simple, enjoyable activities. Whether you're recalling colors, words, or numbers, these games will kickstart your journey to a <span class="highlight">sharper mind</span>—and we'll keep it light and fun along the way!</p>
+
+            <!-- Secondary Title: Why This Works -->
+            <h2>Why This Section Works for You</h2>
+            <ul>
+                <li><span class="highlight">Gentle Start</span>: Perfect for beginners, these games ease you into memory exercises.</li>
+                <li><span class="highlight">Boosts Recall</span>: Helps you practice remembering small details in a stress-free way.</li>
+                <li><span class="highlight">Fun and Engaging</span>: Designed to bring a smile while strengthening your brain.</li>
+            </ul>
+
+            <!-- Secondary Title: How to Use -->
+            <h2>How to Use This Section</h2>
+            <ol>
+                <li><strong>Pick a Game</strong>: Start with any of the 10 games in this section—they're all beginner-friendly!</li>
+                <li><strong>Spend 5-10 Minutes</strong>: Take your time with each game. <span class="highlight">No pressure—just have fun!</span></li>
+                <li><strong>Use a Pencil or Voice</strong>: Write answers in the spaces provided or say them aloud.</li>
+                <li><strong>Repeat Often</strong>: Try a game a few times to see how much sharper you get!</li>
+            </ol>
+
+            <!-- Secondary Title: Tip -->
+            <h2>A Little Tip to Start</h2>
+            <p>Choose one game to try today and enjoy the process. You're already taking a great step toward a <span class="highlight">stronger memory</span>—I'm cheering for you!</p>
+        </div>
+    </div>
+
+    <!-- Add JavaScript for menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const megaMenu = document.querySelector('.mega-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                megaMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.mega-menu-container')) {
+                    megaMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    
+    <!-- Add Chat Interface Script -->
+    <script src="scripts/chat.js"></script>
+</body>
+</html>
