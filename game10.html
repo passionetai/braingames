@@ -6,7 +6,9 @@
     <title>Stay Sharp - Game 10: Daily Flash</title>
     <!-- Add Google Fonts link for a rounded font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
+     <!-- Link to main.css -->
+     <link rel="stylesheet" href="main.css">
+     <style>
         /* Global Styles */
         body {
             font-family: 'Nunito', sans-serif; /* Modern, rounded font */
@@ -21,7 +23,7 @@
 
         /* Header Section */
         .game-header {
-            background-color: #27ae60; /* Green from wireframe */
+            background-color: #27ae60;
             border-radius: 15px;
             padding: 20px;
             display: flex;
@@ -32,8 +34,12 @@
         }
 
         .game-header .title {
-            font-size: 28px;
-            font-weight: 700; /* Bold for the title */
+            font-size: 36px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            text-transform: capitalize;
+            letter-spacing: 1px;
         }
 
         .game-header .graphic-placeholder {
@@ -43,7 +49,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden; /* Ensures the image respects the border radius */
+            overflow: hidden;
         }
 
         .game-header .graphic-placeholder img {
