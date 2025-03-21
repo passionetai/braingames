@@ -118,19 +118,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            overflow: hidden;
-        }
-
-        /* Add this media query for mobile devices */
-        @media screen and (max-width: 768px) {
-            .content-wrapper {
-                margin-top: 60px;
-                padding: 8px 0; /* Reduced from 40px to 8px (80% reduction) */
-            }
-            
-            .leaderboard {
-                margin-bottom: 6px; /* Reduced from 30px to 6px (80% reduction) */
-            }
+            overflow: hidden; /* Ensures the image respects the border radius */
         }
 
         .leaderboard img {
